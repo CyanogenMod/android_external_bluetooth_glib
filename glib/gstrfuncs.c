@@ -428,7 +428,9 @@ g_ascii_strtod (const gchar *nptr,
 
   fail_pos = NULL;
 
+#ifdef ANDROID_STUB
   locale_data = localeconv ();
+
   decimal_point = locale_data->decimal_point;
   decimal_point_len = strlen (decimal_point);
 
@@ -547,6 +549,7 @@ g_ascii_strtod (const gchar *nptr,
       g_free (copy);
     }
   else
+#endif
     {
       errno = 0;
       val = strtod (nptr, &fail_pos);
@@ -560,7 +563,6 @@ g_ascii_strtod (const gchar *nptr,
 
   return val;
 }
-
 
 /**
  * g_ascii_dtostr:
@@ -643,6 +645,7 @@ g_ascii_formatd (gchar       *buffer,
       
   _g_snprintf (buffer, buf_len, format, d);
 
+#ifdef ANDROID_STUB
   locale_data = localeconv ();
   decimal_point = locale_data->decimal_point;
   decimal_point_len = strlen (decimal_point);
@@ -675,6 +678,7 @@ g_ascii_formatd (gchar       *buffer,
 	    }
 	}
     }
+#endif
   
   return buffer;
 }
