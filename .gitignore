@@ -12,7 +12,6 @@ Makefile
 
 # autofoo stuff here
 compile
-config.*
 configure
 depcomp
 aclocal.m4
@@ -24,5 +23,4 @@ missing
 install-sh
 glib-gettextize
 glib-zip
-glibconfig.h
 gtk-doc.make
