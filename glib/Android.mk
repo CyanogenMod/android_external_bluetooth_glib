@@ -40,6 +40,6 @@ LOCAL_C_INCLUDES:= \
 	$(LOCAL_PATH)/../ \
 	$(LOCAL_PATH)
 
-LOCAL_MODULE:=libglib_static
+LOCAL_MODULE:=libglib
 
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
