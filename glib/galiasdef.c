@@ -459,7 +459,7 @@ extern __typeof (g_completion_set_compare) g_completion_set_compare __attribute(
 #undef g_get_filename_charsets 
 extern __typeof (g_get_filename_charsets) g_get_filename_charsets __attribute((alias("IA__g_get_filename_charsets"), visibility("default")));
 
-#ifdef ANDROID_STUB
+#ifndef ANDROID_STUB
 #undef g_convert 
 extern __typeof (g_convert) g_convert __attribute((alias("IA__g_convert"), visibility("default")));
 #endif
@@ -467,7 +467,7 @@ extern __typeof (g_convert) g_convert __attribute((alias("IA__g_convert"), visib
 #undef g_convert_error_quark 
 extern __typeof (g_convert_error_quark) g_convert_error_quark __attribute((alias("IA__g_convert_error_quark"), visibility("default")));
 
-#ifdef ANDROID_STUB
+#ifndef ANDROID_STUB
 #undef g_convert_with_fallback 
 extern __typeof (g_convert_with_fallback) g_convert_with_fallback __attribute((alias("IA__g_convert_with_fallback"), visibility("default")));
 
@@ -2707,7 +2707,7 @@ extern __typeof (g_ascii_digit_value) g_ascii_digit_value __attribute((alias("IA
 #undef g_ascii_dtostr 
 extern __typeof (g_ascii_dtostr) g_ascii_dtostr __attribute((alias("IA__g_ascii_dtostr"), visibility("default")));
 
-#ifdef ANDROID_STUB
+#ifndef ANDROID_STUB
 #undef g_ascii_formatd 
 extern __typeof (g_ascii_formatd) g_ascii_formatd __attribute((alias("IA__g_ascii_formatd"), visibility("default")));
 #endif
@@ -2715,7 +2715,7 @@ extern __typeof (g_ascii_formatd) g_ascii_formatd __attribute((alias("IA__g_asci
 #undef g_ascii_strdown 
 extern __typeof (g_ascii_strdown) g_ascii_strdown __attribute((alias("IA__g_ascii_strdown"), visibility("default")));
 
-#ifdef ANDROID_STUB
+#ifndef ANDROID_STUB
 #undef g_ascii_strtod 
 extern __typeof (g_ascii_strtod) g_ascii_strtod __attribute((alias("IA__g_ascii_strtod"), visibility("default")));
 #endif

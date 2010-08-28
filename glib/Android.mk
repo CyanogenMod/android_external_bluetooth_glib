@@ -40,6 +40,9 @@ LOCAL_C_INCLUDES:= \
 	$(LOCAL_PATH)/../ \
 	$(LOCAL_PATH)
 
+LOCAL_CFLAGS:= \
+	-DANDROID_STUB
+
 LOCAL_MODULE:=libglib_static
 
 include $(BUILD_STATIC_LIBRARY)

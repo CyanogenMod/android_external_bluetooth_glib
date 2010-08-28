@@ -116,7 +116,7 @@
 #include <CoreServices/CoreServices.h>
 #endif
 
-#ifdef ANDROID_STUB
+#ifndef ANDROID_STUB
 #ifdef HAVE_CODESET
 #include <langinfo.h>
 #endif
@@ -1681,7 +1681,7 @@ g_get_any_init_do (void)
     while (!pw);
 #  endif /* HAVE_POSIX_GETPWUID_R || HAVE_NONPOSIX_GETPWUID_R */
     
-#ifdef ANDROID_STUB
+#ifndef ANDROID_STUB
     if (!pw)
       {
 	setpwent ();
@@ -1693,7 +1693,7 @@ g_get_any_init_do (void)
       {
 	g_user_name = g_strdup (pw->pw_name);
 
-	#ifdef ANDROID_STUB
+	#ifndef ANDROID_STUB
 	if (pw->pw_gecos && *pw->pw_gecos != '\0') 
 	  {
 	    gchar **gecos_fields;
