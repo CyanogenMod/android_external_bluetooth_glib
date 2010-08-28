@@ -3665,7 +3665,7 @@ g_child_watch_source_init_single (void)
   sigaction (SIGCHLD, &action, NULL);
 }
 
-#ifdef ANDROID_STUB
+#ifndef ANDROID_STUB
 G_GNUC_NORETURN static gpointer
 #else
 void
