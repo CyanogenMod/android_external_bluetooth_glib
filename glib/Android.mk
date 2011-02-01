@@ -45,4 +45,6 @@ LOCAL_CFLAGS:= \
 
 LOCAL_MODULE:=libglib
 
+LOCAL_PRELINK_MODULE := false
+
 include $(BUILD_SHARED_LIBRARY)
