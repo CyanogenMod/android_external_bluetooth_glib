@@ -42,7 +42,7 @@ LOCAL_C_INCLUDES:= \
 	$(LOCAL_PATH)
 
 LOCAL_CFLAGS:= \
-	-DANDROID_STUB
+	-DANDROID_STUB -fno-strict-aliasing
 
 LOCAL_MODULE:=libglib
 
