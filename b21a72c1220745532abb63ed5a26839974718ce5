@@ -1,0 +1,9 @@
+Change-Id: Ib21a72c1220745532abb63ed5a26839974718ce5
+Code-Review+2: Steve Kondik <shade@chemlab.org>
+Verified+1: Steve Kondik <shade@chemlab.org>
+Code-Review+1: Bernhard Rosenkraenzer <Bernhard.Rosenkranzer@linaro.org>
+Submitted-by: Steve Kondik <shade@chemlab.org>
+Submitted-at: Sun, 10 Jun 2012 06:45:54 +0400
+Reviewed-on: http://review.cyanogenmod.com/17361
+Project: CyanogenMod/android_external_bluetooth_glib
+Branch: refs/heads/ics
